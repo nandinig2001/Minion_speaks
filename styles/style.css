@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Courgette', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/banana.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  
+}
+
+main{
+  width: 30rem;
+  text-align: center;
+  position: relative;
+}
+
+h2 {
+  display: block;
+  font-size: 2rem;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  resize: none;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-width: 0.1cm;
+  border-color: #000000;
+  color: black;
+  background-color: transparent;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 5px;
+
+  box-shadow: inset -10px -10px 3px #fa8806;
+}
+
+
+
+textarea :focus{
+  outline: black;
+}
+
+button{
+  padding: 0.5rem 1rem;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-width: 0.01cm;
+  border-color: #000000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  transition: all 0.1s ease;
+  margin: 1rem 0;
+}
+
+button:hover{
+  transform: translateY(0.2px);
+}
+
+.tooltip{
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  display: none;
+}
+
+main:hover .tooltip{
+  display: block;
+}
+
+.output{
+  width: 100%;
+  height: 10rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-width: 0.1cm;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: inset -10px -10px 3px #fa8806;
+}
